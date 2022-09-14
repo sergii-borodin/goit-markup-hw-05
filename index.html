@@ -71,7 +71,9 @@
             ефективні рішення для <br />
             вашого бізнесу
           </h1>
-          <button class="hero-btn" type="button">Замовити послугу</button>
+          <button class="hero-btn" type="button" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
       <section class="section">
@@ -138,6 +140,9 @@
                 alt="Написання коду за симантичною схемою."
                 width="370"
               />
+              <div class="work-overlay">
+                <p class="work-dscr">Десктопні додатки</p>
+              </div>
             </li>
             <li class="work-item">
               <img
@@ -145,6 +150,9 @@
                 alt="Компьютер через який відбувається налаштування телефону."
                 width="370"
               />
+              <div class="work-overlay">
+                <p class="work-dscr">Мобільні додатки</p>
+              </div>
             </li>
             <li class="work-item">
               <img
@@ -152,6 +160,9 @@
                 alt="Планшет з зображенням палітри кольорів.На задньому плані стоїть компьютер."
                 width="370"
               />
+              <div class="work-overlay">
+                <p class="work-dscr">Дизайнерські рішення</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -620,5 +631,12 @@
         </div>
       </div>
     </footer>
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+        <button data-modal-close class="modal-close">X</button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
